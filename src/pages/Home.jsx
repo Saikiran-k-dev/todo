@@ -11,7 +11,7 @@ const Home = () => {
     useEffect(()=>{
         dispatch(fetchStart())
         dispatch(getTodos())
-    },[])
+    },[dispatch])
   return (
     <div>
       <List />
